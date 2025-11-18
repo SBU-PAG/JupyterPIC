@@ -2014,7 +2014,8 @@ def tajima(rundir):
         phase_plot=plt.subplot(325 )
         #print(repr(phase_space.axes[0].min))
         #print(repr(phase_space.axes[1].min))
-        title=phase_space.data_attrs['LONG_NAME']
+        # title=phase_space.data_attrs['LONG_NAME']
+        title=phase_space.data_attrs['NAME']
         time=phase_space.run_attrs['TIME'][0]
 
         fig.suptitle('Time = '+repr(time)+'$\omega_p^{-1}$',fontsize=24)
@@ -2066,7 +2067,7 @@ def tajima(rundir):
         p2x1_plot=plt.subplot(326)
         #print(repr(phase_space.axes[0].min))
         #print(repr(phase_space.axes[1].min))
-        title=p2x1.data_attrs['LONG_NAME']
+        title=p2x1.data_attrs['NAME']
         time=p2x1.run_attrs['TIME'][0]
         ext_stuff=[p2x1.axes[1].min,p2x1.axes[1].max,p2x1.axes[0].min,p2x1.axes[0].max]
         p2x1_contour=plt.contourf(np.abs(p2x1+0.000000001),levels=[0.00001,0.0001,0.001,0.01,0.05,0.1,0.2,0.5,1,10,100,500],extent=ext_stuff,cmap='Spectral',vmin=1e-5,vmax=3000,
@@ -2128,7 +2129,7 @@ def phasespace_movie(rundir):
         phase_plot=plt.subplot(121)
         #print(repr(phase_space.axes[0].min))
         #print(repr(phase_space.axes[1].min))
-        title=phase_space.data_attrs['LONG_NAME']
+        title=phase_space.data_attrs['NAME']
         time=phase_space.run_attrs['TIME'][0]
         ext_stuff=[phase_space.axes[1].min,phase_space.axes[1].max,phase_space.axes[0].min,phase_space.axes[0].max]
         phase_contour=plt.contourf(phase_space,levels=[0.1,1,2,3,5,10,100,1000,100000],extent=ext_stuff,cmap='Spectral',vmin=1e-1,vmax=100000,

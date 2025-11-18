@@ -28,6 +28,11 @@ We welcome contributions and ideas:  please email us at picksc.org@gmail.com
 
 The above commands will write simulation output into the project directories.  If you would like to keep a fresh copy of this original GitHub repository, it is important that you copy this JupyterPIC directory into a separate location on your computer for simulation purposes and personal file modifications.
 
+## Special Notes for running under non-Apple ARM64 processors:
+
+All of the OSIRIS input decks runs in parallel on 8 cores.  This is the lowest denominator for Apple Silicon as that is the number of cores on the M1 processor.  I did this for speed but of course it sacrifices portability.  If you are running on an ARM64 processor with less than 8 cores it may not work.  If you run into this problem then you can go and change the input parameter "n_threads" to the number that suits your need. 
+
+
 ## Running notebooks under Windows:
 
 The docker environment also works under windows if you can install Docker on your Windows system.  Installing docker requires very recent versions of Windows 10 (2018 or later), but if you have a newer (i.e., purchased after 2017) computer you should be able install and run the Docker container needed to run these notebooks.  Then, you must enable disk sharing on the directory where this GitHub repo is located.  (i.e., C:, D: or G:)  To start the Docker container, first download it from the Dockerhub

@@ -6,6 +6,7 @@ node_conf
 {
 node_number(1:1) = 1,
 if_periodic(1:1) = .false.,
+n_threads = 8,
 }
 !----------spatial grid----------
 grid

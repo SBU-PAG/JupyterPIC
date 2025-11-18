@@ -66,7 +66,8 @@ def __osplot1d(func, h5data, xlabel=None, ylabel=None, xlim=None, ylim=None, tit
     if xlabel is None:
         xlabel = axis_format(h5data.axes[0].attrs['LONG_NAME'], xunit)
     if ylabel is None:
-        ylabel = axis_format(h5data.data_attrs['LONG_NAME'], str(h5data.data_attrs['UNITS']))
+        # ylabel = axis_format(h5data.data_attrs['LONG_NAME'], str(h5data.data_attrs['UNITS']))
+        ylabel = axis_format(h5data.data_attrs['NAME'], str(h5data.data_attrs['UNITS']))
     if xlim is not None:
         set_xlim(xlim)
     if ylim is not None:
