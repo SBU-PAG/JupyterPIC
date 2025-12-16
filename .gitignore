@@ -6,3 +6,4 @@
 *.pyc
 *.h5
 runosdocker 2
+.DS_Store
