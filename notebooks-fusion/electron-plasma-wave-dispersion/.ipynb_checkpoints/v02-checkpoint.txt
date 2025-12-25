@@ -6,7 +6,7 @@ node_conf
 {
 node_number(1:1) = 1,
 if_periodic(1:1) = .true.,
-n_threads=4,
+n_threads=10,
 }
 !----------spatial grid----------
 grid
@@ -39,7 +39,7 @@ if_move(1:1) = .false.,
 time
 {
 tmin = 0.0e0,
-tmax = 400.0e0,
+tmax = 1200.0e0,
 }
 !----------field solver set up-----------------
 el_mag_fld

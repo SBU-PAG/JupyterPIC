@@ -37,7 +37,7 @@ All of the OSIRIS input decks runs in parallel on 8 cores.  This is the lowest d
 
 The docker environment also works under windows if you can install Docker on your Windows system.  Installing docker requires very recent versions of Windows 10 (2018 or later), but if you have a newer (i.e., purchased after 2017) computer you should be able install and run the Docker container needed to run these notebooks.  Then, you must enable disk sharing on the directory where this GitHub repo is located.  (i.e., C:, D: or G:)  To start the Docker container, first download it from the Dockerhub
 
-docker pull picksc/jupyterpic
+docker pull tsung1029/jupyterpic-arm64
 
 Then open PowerShell in Windows, and launch the docker container.
 

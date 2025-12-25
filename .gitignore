@@ -9,3 +9,4 @@ runosdocker 2
 .local/share/jupyter/runtime/jupyter_cookie_secret
 *.jupyterlab-workspace
 *.log
+notebooks-fusion/light-wave-dispersion/v02/MS/run-info
