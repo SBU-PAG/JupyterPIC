@@ -42,3 +42,7 @@ docker run -v ${PWD}:/home/jovyan -p 8888:8888 picksc/jupyterpic
 
 or RIGHT CLICK on "runosdocker.ps1" script and choose "Run with PowerShell"
 
+NOTE:
+
+If the above method fails try "running as administrator" when you launch Powershell, or use the "sudo" command if you are running ubuntu.
+
