@@ -20,7 +20,7 @@ We welcome contributions and ideas:  please email us at picksc.org@gmail.com
 * Docker must be installed ([Docker site](https://www.docker.com/))
 * Clone this repository
 * Navigate into the JupyterPIC directory
-* Execute `./runosdocker`
+* Execute `./runosdocker`  (NOTE:  If you receive an error message during this step try running 'sudo ./runosdocker' and see if this helps.  Sometimes this step fails because of permission issues.)
 * This will output several lines of text to your terminal, including a web URL
 * Paste the web URL into a web browser to start the Jupyter environment
 * Within Jupyter, open the *.ipynb files inside any of the "notebooks" directories 
